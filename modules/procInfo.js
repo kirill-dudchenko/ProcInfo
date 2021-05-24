@@ -1,7 +1,9 @@
 const os = require('os')
 
+let procObj = os.cpus()
+
 function getName() {
-    let procObj = os.cpus()
+
     let name = "";
     
     for (let i in procObj) {
@@ -13,7 +15,7 @@ function getName() {
 }
 
 function getSpeed() {
-    let procObj = os.cpus()
+    
     let speed = ""
 
     for (let i in procObj) {
